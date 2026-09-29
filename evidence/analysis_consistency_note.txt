@@ -1,0 +1,23 @@
+Generated repository audit note (not an upstream source file)
+
+The preserved official analysis output and the current archival CSV files are not exactly identical for one scenario:
+
+Scenario: CESC CV1 UMT
+
+Preserved server_official_analysis.txt line:
+0.8046(0.0409), 0.7974(0.0631), 0.7972(0.0366) server_official_e200_pan_e30 CESC cv1 umt
+
+Recomputed from the current five train_val_evaluate.csv files using the upstream max-val_AUC selection rule:
+test_AUC 0.8051230839 (std 0.04042351575)
+test_AUPR 0.7982240238 (std 0.06223263187)
+test_F1 0.7972278068 (std 0.03658555386)
+
+At the fold level, the current CESC CV1 UMT fold 1 selected row is:
+test_AUC 0.7706542209, test_AUPR 0.7322379209, test_F1 0.828
+
+The preserved analysis text prints fold 1 as:
+0.7632, 0.7506, 0.8130
+
+The other four fold lines agree at the printed four-decimal precision. The difference is larger than formatting-only rounding for fold 1. The available files do not establish whether the text was generated from a different CSV snapshot or another historical state, so the exact cause remains unresolved.
+
+The preserved output and source CSVs are both retained unchanged. The generated result_summary.csv is derived from the current source CSVs; no value was changed to force agreement with the older text output.

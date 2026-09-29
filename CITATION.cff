@@ -1,0 +1,40 @@
+cff-version: 1.2.0
+title: "SynLeaF Reproduction"
+message: "If you use this reproduction repository, please cite the original SynLeaF paper and identify the reproduction commit or release used."
+type: software
+authors:
+  - name: "Shauri Hasani Shauri"
+  - name: "Junyi Li"
+references:
+  - type: article
+    title: "SynLeaF: A Dual-Stage Multimodal Fusion Framework for Synthetic Lethality Prediction Across Pan- and Single-Cancer Contexts"
+    authors:
+      - family-names: Xing
+        given-names: Zheming
+      - family-names: Zhou
+        given-names: Siyuan
+      - family-names: Wang
+        given-names: Ruinan
+      - family-names: Han
+        given-names: Rui
+      - family-names: Zhang
+        given-names: Shiming
+      - family-names: Chen
+        given-names: Shiqu
+      - family-names: Huang
+        given-names: Yurui
+      - family-names: Ma
+        given-names: Jiahao
+      - family-names: Chen
+        given-names: Yifan
+      - family-names: Wang
+        given-names: Xuan
+      - family-names: Wang
+        given-names: Yadong
+      - family-names: Li
+        given-names: Junyi
+    year: 2026
+    identifiers:
+      - type: other
+        value: "2603.22369"
+        description: "arXiv preprint"

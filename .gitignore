@@ -1,0 +1,59 @@
+# Python and notebooks
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Checkpoints and large archives
+*.pth
+*.pt
+*.ckpt
+*.tar
+*.tar.gz
+*.zip
+*.7z
+*.rar
+
+# Local data and generated experiment outputs
+data_raw/
+data/
+!data/
+!data/README.md
+result/
+results/archive/
+*.npy
+*.npz
+*.h5
+*.hdf5
+*.bin
+*.safetensors
+
+# Local environments and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+id_rsa*
+id_ed25519*
+credentials.json
+secrets.*
+config.local.*
+
+# IDE and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Temporary and private logs
+*.tmp
+*.swp
+*.bak
+*.log
+*.out
+*.err
+!evidence/*.log

@@ -1,0 +1,12 @@
+Authoritative reproduction runner provenance
+
+Source on university server:
+/home/shaur/research/synleaf_server/workspace/SynLeaF_official/run_full_grid.py
+
+Repository copy:
+experiments/run_full_grid.py
+
+SHA-256 (server and Mac verification):
+8cd29f0eac2da80c4f4bea2105bd4739d5ade6ff74faa208f73b6bce2903ef8f
+
+The runner is a reproduction-specific wrapper. It is not upstream src/scheduler.py.

@@ -1,0 +1,17 @@
+No separate reproduction license is asserted by this repository.
+
+The upstream SynLeaF checkout at commit
+5856ae72e4462b75eb1c0901911ac2d29f02afab did not contain a LICENSE or
+COPYING file.
+
+The upstream SynLeaF source is retained in this repository for
+reproducibility in connection with the original SynLeaF project. This
+repository does not assign an independent open-source license to the
+upstream source.
+
+Questions concerning licensing or redistribution of the upstream
+SynLeaF source should be directed to the original SynLeaF authors.
+
+The reproduction-specific documentation, analysis summaries, and other
+original materials in this repository are provided without an implied
+license grant.

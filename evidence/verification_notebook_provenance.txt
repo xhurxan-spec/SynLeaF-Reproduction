@@ -1,0 +1,12 @@
+Verification notebook provenance
+
+Source on university server:
+/home/shaur/research/synleaf_server/workspace/SynLeaF_official/01_SynLeaF_Verification.ipynb
+
+Repository copy:
+experiments/01_SynLeaF_Verification.ipynb
+
+Repository copy size: 15852 bytes
+Repository copy SHA-256: bee95cead7ccf096757f5398eb65f386e6d4f2d2b6c50a1c11add2d354e09548
+
+The notebook is retained as a verification/execution record. It is not the primary reusable runner and was not executed during this audit.

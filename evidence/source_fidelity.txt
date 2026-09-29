@@ -1,0 +1,32 @@
+Source fidelity check
+
+Reference checkout:
+/Users/mac/Documents/HIT/RESEARCH/PAPER REVIEWED AND REPRODUCED/P4. SynLeaF/SynLeaF_official
+
+Reference commit:
+5856ae72e4462b75eb1c0901911ac2d29f02afab
+
+The 11 tracked source files under the reference checkout's src/ directory
+were compared byte-for-byte with the corresponding files under this
+repository's src/ directory after removing the leading src/ path component.
+All 11 files matched. The comparison covered:
+
+src/analysis.py
+src/dataset.py
+src/executor.py
+src/model.py
+src/preprocess_folder.py
+src/preprocess_main.py
+src/preprocess_pre.py
+src/scheduler.py
+src/train.py
+src/util/lookahead.py
+src/util/my.py
+
+The upstream root README.md, accelerate_config.yaml, and misc assets retained
+under this repository's src/ directory were also byte-identical to the
+corresponding files in the reference checkout. Their presence is supporting
+upstream material; the reusable reproduction runner is the separate
+experiments/run_full_grid.py file.
+
+No upstream source file was modified during this audit.

@@ -1,0 +1,17 @@
+SynLeaF Official Server Reproduction
+====================================
+
+Task prefix: server_official_e200_pan_e30
+
+Completion audit:
+Completed: 380 / 380
+All 380 tasks are complete.
+
+Result directory count: 380
+Result size: 130G
+
+Source commit:
+5856ae72e4462b75eb1c0901911ac2d29f02afab
+
+Official analysis:
+server_official_analysis.txt

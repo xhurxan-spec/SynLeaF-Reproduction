@@ -1,0 +1,57 @@
+project: SynLeaF reproduction
+source:
+  upstream_repository: SynLeaF_official
+  commit: 5856ae72e4462b75eb1c0901911ac2d29f02afab
+  source_status: tracked files from the upstream commit are copied under src/
+  reproduction_runner: experiments/run_full_grid.py
+  reproduction_runner_sha256: 8cd29f0eac2da80c4f4bea2105bd4739d5ade6ff74faa208f73b6bce2903ef8f
+  verification_notebook: experiments/01_SynLeaF_Verification.ipynb
+  archival_result_root: null
+task_grid:
+  prefix: server_official_e200_pan_e30
+  official_task_count: 380
+  individual_cancers: [BRCA, CESC, COAD, KIRC, LAML, LUAD, OV, SKCM]
+  pan_cancer_setting: pan
+  single_cancer_cvs: [1, 2]
+  pan_cancer_cvs: [1, 2, 3]
+  folds: [1, 2, 3, 4, 5]
+  task_types: [only_omics, only_kg, umt, ume]
+  preflight:
+    name: preflight_BRCA_cv1_fold1_only_omics
+    included_in_official_count: false
+training:
+  single_cancer:
+    epochs: 200
+    batch_size: 384
+    omics_types: [cna, exp, mut, myl]
+    vae_hidden_dims: [512, 256]
+  pan_cancer:
+    epochs: 30
+    batch_size: 2048
+    omics_types: [cna, exp, mut]
+    vae_hidden_dims: [2048, 1024, 512, 256]
+  defaults_from_train_py:
+    split_batches: true
+    lr: 0.001
+    weight_decay: 0.0001
+    gradient_accumulation: 1
+    patience: 999
+    hid_dim: 128
+    vae_dropout: 0.2
+    self_kl_loss_weight: 0.1
+    cross_kl_loss_weight: 0.5
+    in_channels: 128
+    hidden_channels: 256
+    gcn_layers: 2
+    graph_dropout: 0.5
+    gene_final_dim: 128
+    final_mlp_dropout: 0.5
+    lambda_distill: 1
+distributed:
+  accelerate_config: experiments/accelerate_config.yaml
+  distributed_type: MULTI_GPU
+  num_processes: 2
+  gpu_ids: [0, 1]
+  mixed_precision: no
+data:
+  processed_archive_sha256: 73a9fa252ab75c609ff76ecacc3ea5fa4dabc0204d4117e17c4362767b0400d1
